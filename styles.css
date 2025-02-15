@@ -1,0 +1,156 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('3.jpg'); /* Use a relevant background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.904); /* Dark header with some transparency */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: #ff6347; /* Logo color */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for Links */
+.nav-link:hover {
+    color: #ff6347;
+    border-bottom: 3px solid #ff6347;
+}
+
+/* Main Content Styles */
+.main-content {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    border-radius: 10px;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 1000px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ff6347;
+}
+
+.main-content p {
+    font-size: 22px;
+    color: #f0f0f0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff6347;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect for Button */
+.cta-button:hover {
+    background-color: #e55347;
+    transform: translateY(-5px);
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Same dark background for footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Additional Styles for Navigation Links */
+nav ul li a {
+    font-size: 20px;
+    padding: 15px 0;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 28px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .main-content {
+        padding: 50px 20px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}

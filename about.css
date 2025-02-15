@@ -1,0 +1,142 @@
+/* Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('1.jpg') no-repeat center center fixed; /* Set your background image here */
+    background-size: cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Wrapper for all content */
+.container-wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8); /* Light transparent white background */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Container 1 (About Us Section) */
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4CAF50; /* Green background for educational feel */
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.container1:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.container1 .a {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.container1 .b {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* Container 2 (Social Media Links) */
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff5722; /* Orange background for attention */
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.container2:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.container2 a {
+    font-size: 40px;
+    color: #fff;
+    margin: 10px 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.container2 a:hover {
+    color: #f1f1f1; /* Slight lighter color on hover */
+    transform: scale(1.1);
+}
+
+/* Container 3 (Additional Icons) */
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2196F3; /* Blue background for trustworthiness */
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.container3:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.container3 i {
+    font-size: 50px;
+    color: #fff;
+    margin: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.container3 i:hover {
+    color: #ffeb3b; /* Yellow color on hover for excitement */
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container1, .container2, .container3 {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 30px;
+    }
+
+    .container1 .a, .container2 a, .container3 i {
+        font-size: 40px;
+    }
+}
+
+
