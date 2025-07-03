@@ -14,11 +14,14 @@
             background-color: #fdf6e3;
         }
         h1 {
-            font-size: 15vw;
+            /* Dynamically responsive font size for mobile, tablet, and desktop */
+            font-size: clamp(30px, 15vw, 120px);
             font-family: 'Comic Sans MS', cursive, sans-serif;
             color: #ff69b4;
             text-shadow: 4px 4px #ffb6c1;
             animation: pop 1s ease-out forwards;
+            text-align: center;
+            margin: 0 20px; /* adds breathing space on mobile edges */
         }
         @keyframes pop {
             0% { transform: scale(0); opacity: 0; }
